@@ -1,0 +1,33 @@
+git config --global user.name "Franfi"
+git config --global user.email "3426626940@qq.com"
+
+# 设置 HTTP 代理（假设端口是 7890，如果配置文件用的是 mixed-port）
+export http_proxy=http://127.0.0.1:7890
+export https_proxy=http://127.0.0.1:7890
+
+# 或者使用 SOCKS5 代理（端口 7891）
+export all_proxy=socks5://127.0.0.1:7891
+
+# 同时设置 HTTP 和 SOCKS5
+export http_proxy=http://127.0.0.1:7890
+export https_proxy=http://127.0.0.1:7890
+export all_proxy=socks5://127.0.0.1:7891
+
+我准备做一个通用agent judge，在搜索任务上我从：一、自产轨迹部分1.BrowseComp / BrowseComp-ZH / LiveBrowseComp 2. AssistantBench 3.WideSearch / DeepWideSearch这三种数据，并取这三种数据的task用来自己生产agent轨迹。
+二、同时结合现有轨迹：1. OpenResearcher 2. OpenSeeker / OpenSeeker-v2 3.WebLINX 
+三、准备自己构造一点task，给一个自己构造task的方案。 请你分析我当前的方案是覆盖了足够多的搜索任务
+
+自采 task:
+1. AssistantBench/AssistantBench
+2. ByteDance-Seed/WideSearch
+3. PALIN2018/BrowseComp-ZH
+
+现成轨迹:
+1. PolarSeeker/OpenSeeker-v1-Data
+2. OpenResearcher/OpenResearcher-Dataset
+3. McGill-NLP/WebLINX
+
+
+AssistantBench/AssistantBench
+ByteDance-Seed/WideSearch
+PALIN2018/BrowseComp-ZH

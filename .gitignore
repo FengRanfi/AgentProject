@@ -2,3 +2,5 @@ errorDir
 myapp
 autoGen/modelTest/testRunCommand
 result
+dataset
+command.txt
