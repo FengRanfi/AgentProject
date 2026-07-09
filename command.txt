@@ -31,3 +31,10 @@ export all_proxy=socks5://127.0.0.1:7891
 AssistantBench/AssistantBench
 ByteDance-Seed/WideSearch
 PALIN2018/BrowseComp-ZH
+
+Jina-AI-MCP-Tools
+  + 浏览器/网页访问 MCP
+  + 高德地图/地图 MCP
+  + 天气 MCP
+  + Wikipedia/Wikidata MCP
+  +智谱
